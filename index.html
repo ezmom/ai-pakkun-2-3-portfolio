@@ -138,32 +138,122 @@
         <h2>できの良いバナー例</h2>
       </div>
       <div class="banner-grid">
-        <figure>
+        <figure data-banner-card data-image="assets/banners/aporo-list-3apo.png" data-project="AIアポろうくん" data-title="3,000件送って3アポ。10件で4アポ、出した人がいる。" data-stage="準顕在 / リスト品質訴求" data-hook="送る数ではなく、送る相手の違いに視点を変える。" data-detail="大量送信疲れのある営業担当に、広告出稿中企業リストの質を短い実績コピーで伝えるバナー。" data-use="リスト精度、商談獲得効率、営業代行/インサイドセールス訴求の入口。">
           <img src="assets/banners/aporo-list-3apo.png" alt="AIアポろうくんのリスト訴求バナー">
           <figcaption>AIアポろうくん / 準顕在 / リスト品質訴求</figcaption>
-          <a class="banner-hit" href="assets/banners/aporo-list-3apo.png" target="_blank" rel="noopener" aria-label="AIアポろうくんのリスト訴求バナーを開く"></a>
+          <button class="banner-hit" type="button" aria-label="AIアポろうくんのリスト訴求バナーの詳細を見る"></button>
         </figure>
-        <figure>
+        <figure data-banner-card data-image="assets/banners/aporo-cpa-6000.png" data-project="AIアポろうくん" data-title="CPA¥6,000台は出せますか？" data-stage="顕在 / CPA改善訴求" data-hook="広告運用だけでなく、狙う企業リストを変えるとCPAも変わる。" data-detail="数字で強く止めた上で、リスト設計をCPA改善のレバーとして再定義するバナー。" data-use="CPA高騰、広告効率改善、営業リスト見直しの検討層向け。">
           <img src="assets/banners/aporo-cpa-6000.png" alt="AIアポろうくんのCPA訴求バナー">
           <figcaption>AIアポろうくん / 顕在 / CPA改善訴求</figcaption>
-          <a class="banner-hit" href="assets/banners/aporo-cpa-6000.png" target="_blank" rel="noopener" aria-label="AIアポろうくんのCPA訴求バナーを開く"></a>
+          <button class="banner-hit" type="button" aria-label="AIアポろうくんのCPA訴求バナーの詳細を見る"></button>
         </figure>
-        <figure>
+        <figure data-banner-card data-image="assets/banners/dpro-mcp-access.png" data-project="DPro MCP" data-title="業界初。広告分析MCP" data-stage="機能価値 / 主要媒体アクセス" data-hook="AIツールから主要13媒体の広告データへ自然言語で直接アクセスできる。" data-detail="MCPの抽象性を、データへ接続する扉のビジュアルで直感化した機能訴求バナー。" data-use="AIエージェント活用、広告分析自動化、DPro導入検討の初期接点。">
           <img src="assets/banners/dpro-mcp-access.png" alt="DPro MCPの広告分析バナー">
           <figcaption>DPro MCP / 機能価値 / 主要媒体アクセス</figcaption>
-          <a class="banner-hit" href="assets/banners/dpro-mcp-access.png" target="_blank" rel="noopener" aria-label="DPro MCPの広告分析バナーを開く"></a>
+          <button class="banner-hit" type="button" aria-label="DPro MCPの広告分析バナーの詳細を見る"></button>
         </figure>
-        <figure>
+        <figure data-banner-card data-image="assets/banners/dpro-scene-analysis.png" data-project="動画広告分析Pro" data-title="動画広告が、なぜ外れたか1分でわかる" data-stage="準顕在 / 乗り遅れ恐怖" data-hook="競合が使い始めている分析手法として、遅れの不安と時短価値を同時に出す。" data-detail="暗い分析画面と人物の視線で緊張感を作り、AIシーン分析を次の改善アクションへ接続するバナー。" data-use="動画広告の勝ち負け要因、競合分析、クリエイティブ改善訴求の入口。">
           <img src="assets/banners/dpro-scene-analysis.png" alt="動画広告分析ProのAIシーン分析バナー">
           <figcaption>動画広告分析Pro / 準顕在 / 乗り遅れ恐怖</figcaption>
-          <a class="banner-hit" href="assets/banners/dpro-scene-analysis.png" target="_blank" rel="noopener" aria-label="動画広告分析ProのAIシーン分析バナーを開く"></a>
+          <button class="banner-hit" type="button" aria-label="動画広告分析ProのAIシーン分析バナーの詳細を見る"></button>
         </figure>
       </div>
     </section>
   </main>
 
+  <div class="banner-modal" id="banner-modal" hidden>
+    <div class="banner-modal-backdrop" data-close-banner></div>
+    <section class="banner-modal-panel" role="dialog" aria-modal="true" aria-labelledby="banner-modal-title" aria-describedby="banner-modal-detail">
+      <button class="modal-close" type="button" data-close-banner aria-label="詳細を閉じる">×</button>
+      <div class="banner-modal-image">
+        <img id="banner-modal-image" alt="">
+      </div>
+      <div class="banner-modal-copy">
+        <p class="eyebrow" id="banner-modal-project"></p>
+        <h3 id="banner-modal-title"></h3>
+        <p class="banner-modal-stage" id="banner-modal-stage"></p>
+        <dl class="banner-detail-list">
+          <div>
+            <dt>Hook</dt>
+            <dd id="banner-modal-hook"></dd>
+          </div>
+          <div>
+            <dt>Detail</dt>
+            <dd id="banner-modal-detail"></dd>
+          </div>
+          <div>
+            <dt>Use</dt>
+            <dd id="banner-modal-use"></dd>
+          </div>
+        </dl>
+        <a class="case-link modal-image-link" id="banner-modal-open" href="#" target="_blank" rel="noopener">画像を別タブで開く</a>
+      </div>
+    </section>
+  </div>
+
   <footer class="site-footer">
     <p>Local portfolio built from verified artifacts in AIパクくん 2.3 and related production outputs. API secrets and raw credentials are not included.</p>
   </footer>
+  <script>
+    (() => {
+      const modal = document.getElementById('banner-modal');
+      const modalImage = document.getElementById('banner-modal-image');
+      const modalOpen = document.getElementById('banner-modal-open');
+      const fields = {
+        project: document.getElementById('banner-modal-project'),
+        title: document.getElementById('banner-modal-title'),
+        stage: document.getElementById('banner-modal-stage'),
+        hook: document.getElementById('banner-modal-hook'),
+        detail: document.getElementById('banner-modal-detail'),
+        use: document.getElementById('banner-modal-use')
+      };
+      let lastFocused = null;
+
+      const setText = (key, value) => {
+        fields[key].textContent = value || '';
+      };
+
+      const openModal = (card) => {
+        const data = card.dataset;
+        lastFocused = document.activeElement;
+        setText('project', data.project);
+        setText('title', data.title);
+        setText('stage', data.stage);
+        setText('hook', data.hook);
+        setText('detail', data.detail);
+        setText('use', data.use);
+        modalImage.src = data.image;
+        modalImage.alt = `${data.project} ${data.stage} バナー`;
+        modalOpen.href = data.image;
+        modal.hidden = false;
+        document.body.classList.add('modal-open');
+        modal.querySelector('.modal-close').focus({ preventScroll: true });
+      };
+
+      const closeModal = () => {
+        modal.hidden = true;
+        document.body.classList.remove('modal-open');
+        modalImage.removeAttribute('src');
+        if (lastFocused) {
+          lastFocused.focus({ preventScroll: true });
+        }
+      };
+
+      document.querySelectorAll('[data-banner-card]').forEach((card) => {
+        card.querySelector('.banner-hit').addEventListener('click', () => openModal(card));
+      });
+
+      modal.querySelectorAll('[data-close-banner]').forEach((control) => {
+        control.addEventListener('click', closeModal);
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && !modal.hidden) {
+          closeModal();
+        }
+      });
+    })();
+  </script>
 </body>
 </html>

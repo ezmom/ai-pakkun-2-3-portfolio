@@ -32,6 +32,46 @@
         "assets/banners/dpro-mcp-access.png",
         "assets/banners/dpro-scene-analysis.png"
       ]
+    },
+    {
+      "id": "aporo-demand-concept-20-banners",
+      "title": "AIアポろうくん Demand Concept 20 Banners",
+      "type": "banner_set",
+      "status": "production-ready raw PNG",
+      "count": 20,
+      "media_format": "vertical_4x5",
+      "size": "1024x1280",
+      "source_output": "output/banners/aporo/2026-05-08-demand-concept-20",
+      "metadata": "assets/banners/aporo-20/metadata.json",
+      "preview_assets": [
+        "assets/banners/aporo-20/aporo-01-high-cpa-suuji_hansyou.png",
+        "assets/banners/aporo-20/aporo-02-high-cpa-motai_nai.png",
+        "assets/banners/aporo-20/aporo-03-high-cpa-sokuji_ketsudan.png",
+        "assets/banners/aporo-20/aporo-04-high-cpa-gyaku_setteki.png",
+        "assets/banners/aporo-20/aporo-05-send-target-nihou_tairitsu.png",
+        "assets/banners/aporo-20/aporo-06-send-target-kankaku_kyoyu.png",
+        "assets/banners/aporo-20/aporo-07-send-target-kimetsuke.png",
+        "assets/banners/aporo-20/aporo-08-send-target-suuji_hansyou.png",
+        "assets/banners/aporo-20/aporo-09-list-speed-jikan_attou.png",
+        "assets/banners/aporo-20/aporo-10-list-speed-sokuji_ketsudan.png",
+        "assets/banners/aporo-20/aporo-11-list-speed-ipponmichi.png",
+        "assets/banners/aporo-20/aporo-12-list-speed-motai_nai.png",
+        "assets/banners/aporo-20/aporo-13-brand-safe-kinshi_kaijo.png",
+        "assets/banners/aporo-20/aporo-14-brand-safe-nihou_tairitsu.png",
+        "assets/banners/aporo-20/aporo-15-brand-safe-kankaku_kyoyu.png",
+        "assets/banners/aporo-20/aporo-16-brand-safe-gyaku_setteki.png",
+        "assets/banners/aporo-20/aporo-17-revenue-ai-mirai_jokei.png",
+        "assets/banners/aporo-20/aporo-18-revenue-ai-suuji_hansyou.png",
+        "assets/banners/aporo-20/aporo-19-revenue-ai-doucho.png",
+        "assets/banners/aporo-20/aporo-20-revenue-ai-gyaku_setteki.png"
+      ],
+      "demands": [
+        "ブランド毀損不安",
+        "リスト作成工数",
+        "売上直結AI導入",
+        "送信数疲れ",
+        "高CPA改善"
+      ]
     }
   ]
 }

@@ -399,6 +399,27 @@ h1 {
   margin: 0 auto;
 }
 
+
+.banner-feature-heading {
+  margin-top: 66px;
+  max-width: 880px;
+}
+
+.banner-feature-heading h3 {
+  margin: 0;
+  font-size: clamp(26px, 3.2vw, 44px);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.banner-feature-heading p:last-child {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.7;
+}
+
 .banner-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -428,6 +449,17 @@ h1 {
   object-fit: cover;
   object-position: center;
   background: #101519;
+}
+
+
+.banner-grid-aporo20 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.banner-grid-aporo20 figcaption {
+  min-height: 70px;
+  font-size: 12px;
 }
 
 .banner-grid figcaption {
@@ -592,7 +624,15 @@ h1 {
   font-weight: 800;
 }
 
+
+@media (max-width: 1180px) {
+  .banner-grid-aporo20 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 980px) {
+
   .site-header {
     position: absolute;
   }
@@ -614,6 +654,10 @@ h1 {
   }
 
   .banner-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .banner-grid-aporo20 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 

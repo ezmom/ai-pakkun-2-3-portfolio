@@ -9,19 +9,22 @@
     {
       "title": "AIアポろうくん C LP",
       "preview_asset": "assets/cases/aporo-controlled-c-mobile.png",
-      "source_status": "Verified local production artifact; public showcase includes display-safe preview only",
+      "full_lp": "cases/aporo-controlled-c/index.html",
+      "source_status": "Verified local production artifact; public showcase includes full static LP",
       "status": "CMO approval PASS; OCR 20/20; continuity 100; blocking issues 0"
     },
     {
       "title": "和牛セレブ v3.2 Controlled C",
       "preview_asset": "assets/cases/wagyu-celeb-v32-mobile.png",
-      "source_status": "Verified local production artifact; public showcase includes display-safe preview only",
+      "full_lp": "cases/wagyu-celeb-v32/index.html",
+      "source_status": "Verified local production artifact; public showcase includes full static LP",
       "status": "PRODUCTION READY; OCR 20/20; copy dedup PASS; sales atom order PASS"
     },
     {
       "title": "ひろきいびきクリニック v2 記事LP",
       "preview_asset": "assets/cases/hiroki-snore-v2-article-mobile.png",
-      "source_status": "Latest complete local build selected; public showcase includes display-safe preview only",
+      "full_lp": "cases/hiroki-snore-v2/index.html",
+      "source_status": "Latest complete local build selected; public showcase includes full static article LP",
       "status": "Latest complete build selected; Image2 20/20; semantic audit 20/20; public detail block remains"
     },
     {
